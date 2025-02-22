@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access element's innerHTML (Uncommon bug):
+    document.getElementById("myDiv").innerHTML = document.getElementById("myDiv").innerHTML + " Added Text";
+  </script>
+</body>
+</html>
